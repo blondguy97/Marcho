@@ -38,8 +38,8 @@ function browsersync() {
 
 function images() {
     return gulp.src('development/images/**/*.*')
-    .pipe(imagemin(
-        [
+    .pipe(imagemin([
+        
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 75, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
@@ -49,7 +49,7 @@ function images() {
                     {cleanupIDs: false}
                 ]
             })
-        ]
+    ]
     ))
     .pipe(gulp.dest('finished-app/images'))
 
