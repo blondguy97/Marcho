@@ -33,3 +33,13 @@ $accent: #fe3e57;
     font-family: 'Roboto-Bold', sans-serif;
     font-weight: 700;
 }
+
+%btn {
+    background-color: $accent;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    @extend %roboto-400;
+    box-shadow: 0px 10px 25px 0px rgba(254, 62, 87, 0.3);
+
+}
