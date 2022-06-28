@@ -1,8 +1,9 @@
 .top-slider {
     background-color: $gray;
     padding-top: 65px;
-    background-image: url('../..//images/slider/top-slider-bg.png');
+    background-image: url('../../images/decor/top-slider-bg.svg');
     background-size: cover;
+    padding-bottom: 45px;
     background-repeat: no-repeat;
     &__container {
         max-width: 1520px;
@@ -20,11 +21,11 @@
     &__flex-wrap {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__content {
         padding-left: 160px;
-        padding-top: 125px;
     }
 
     &__text {
@@ -40,7 +41,7 @@
     .slick-dots {
         display: flex;
         justify-content: center;
-        transform: translateY(-70px);
+        margin-top: -70px;
     }
 
     .slick-dots li {
