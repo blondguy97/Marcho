@@ -68,6 +68,7 @@
     &__main-title {
         @extend %title;
         margin-bottom: 10px;
+        text-align: center;
 
     }
     &__subtitle {
@@ -103,11 +104,11 @@
         background-position: center center;
         padding: 35px 0 0 35px;
     }
-    &__item_grid-high {
+    &__item_high {
         grid-row-start: 1;
         grid-row-end: 3;
     }
-    &__item_grid-wide {
+    &__item_wide {
         grid-column-start: 2;
         grid-column-end: 4;
     }
