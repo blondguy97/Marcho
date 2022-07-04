@@ -44,6 +44,15 @@ $accent: #fe3e57;
     box-shadow: 0px 10px 25px 0px rgba(254, 62, 87, 0.3);
 }
 
+
+%transparent-btn {
+    border: 1px $accent solid;
+    color: #414044;
+    background-color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
 %title {
     font-size: 48px;
     @extend %roboto-700;
