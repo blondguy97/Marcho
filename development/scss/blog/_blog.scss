@@ -1,0 +1,111 @@
+.blog {
+    padding: 50px 0 90px;
+    background-image: url('../../images/blog/blog-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &__main-title {
+        @extend %title;
+    }
+
+    &__main-text {
+        @extend %text;
+        margin-bottom: 60px;
+
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__items::after {
+        content: '';
+        position: absolute;
+        right: -20px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        top: -25px;
+        background-image: url('../../images/blog/blog-item-decor.svg');
+        width: 126px;
+        height: 53px;
+
+    }
+}
+
+.blog-item {
+    max-width: 370px;
+    transition: 0.2s all;
+    border: 1px solid #ececec;
+    &__content {
+        padding: 30px 40px;
+    }
+    &__img {
+        height: 288px;
+        object-fit: cover;
+    }
+
+    &__info {
+        display: flex;
+        column-gap: 25px;
+        margin-bottom: 26px;
+    }
+    &__author, 
+    &__data {
+        padding-left: 30px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            background-repeat: no-repeat;
+            top: 4px;
+        }
+    }
+    &__author::before {
+        background-image: url('../../images/blog/user-icon.svg');
+    }
+
+    &__data::before {
+        background-image: url('../../images/blog/time-icon.svg');
+
+    }
+    &__title {
+        @extend %roboto-400;
+        font-size: 22px;
+        color: $black;
+        line-height: 32px;
+        margin-bottom: 23px;
+    }
+
+    &__link {
+        padding-right: 15px;
+        position: relative;
+    }
+    &__link::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 8px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url('../../images/blog/arrow-gray.svg');
+    }
+}
+
+.blog-item:hover {
+    border: 1px solid transparent;
+    box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
+    .blog-item__link {
+        color: $accent;
+    }
+    .blog-item__link::after {
+        background-image: url('../../images/blog/arrow-accent.svg');
+    }
+
+}
+
+  
