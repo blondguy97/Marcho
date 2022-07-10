@@ -61,25 +61,13 @@
 
 }
 
-.smalltext {}
-
-.hours {}
-
-.minutes {}
-
-.seconds {}
-
 .partners {
     padding-top: 75px;
     height: 170px;
-
     &__list {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__item {}
-
-    &__img {}
 }
