@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header header_404-page">
         <div class="header__container _container">
             <div class="header__inner">
                 <a class="logo" href="">
@@ -45,11 +45,9 @@
                     </a>
                     <a class="user-nav__link" href="#">
                         <img class="user-nav__img" src="images/icons/user-nav/heart.svg" alt="nav-icon">
-                        <span class="user-nav__num">3</span>
                     </a>
                     <a class="user-nav__link" href="#">
                         <img class="user-nav__img" src="images/icons/user-nav/cart.svg" alt="nav-icon">
-                        <span class="user-nav__num">7</span>
                     </a>
                 </div>
             </div>
@@ -57,56 +55,24 @@
     </header>
 
     <main class="main">
-        <section class="top">
-            <div class="top-wrapper">
-                <h2 class="top__title">
-                    Log in
-                </h2>
-                <div class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a class="breadcrumbs__link" href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__link" href="#">
-                                Log in
-                            </span>
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </section>
-        <section class="modal">
-            <div class="modal__container _container">
-                <div class="modal__links">
-                    <a class="modal__link" href="#">REGISTER</a>
-                    <span class="modal__link modal__link_active" href="#">LOGIN</span>
-                </div>
-                <form class="modal__form" action="">
-                    <label class="modal__label" for="">
-                        Username or email address*
-                        <input class="modal__input" type="text" required>
-                    </label>
-                    <label class="modal__label" for="">
-                        Password*
-                        <input class="modal__input" type="password" required>
-                    </label>
-                    <label class="modal__label">
-                        <input type="checkbox">
-                        Remember me
-                    </label>
-                    <button class="modal__btn" type="submit">LOG IN</button>
-                    <a class="modal__forget" href="#">
-                        Lost your password?
+      <section class="page-404">
+        <div class="page-404__container _container">
+            <div class="page-404__inner">
+                <div class="page-404__content">
+                    <h2 class="page-404__title">
+                        OPPS! Page Not Found!!
+                    </h2>
+                    <p class="page-404__text">
+                        We,re sorry but we cant seem to find the pages you request. This might be because you have typed the web address not find incorrectly.
+                    </p>
+                    <a class="page-404__link" href="#">
+                        BACK TO HOME
                     </a>
-                   
-                </form>
+                </div>
+                <img class="page-404__img" src="images/404-page/404-bg.png" alt="404 image">
             </div>
-        </section>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
