@@ -1,0 +1,438 @@
+.shop {
+    padding: 120px 0 105px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__filters {
+        max-width: 370px;
+        width: 100%;
+        margin-right: 30px;
+    }
+}
+
+
+
+.filter {
+    &__item {
+        padding: 35px 30px 40px;
+        margin-bottom: 40px;
+        border: 1px solid #ececec;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $black;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+}
+
+.filter-search {
+    &__form {
+        display: flex;
+    }
+
+    &__input {
+        border: none;
+        background-color: $gray;
+        height: 50px;
+        width: 260px;
+        padding: 0 5px 0 15px;
+    }
+
+    &__btn {
+        @extend %btn;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+    }
+}
+
+.filter-price {
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    &__btn {
+        @extend %btn;
+        padding: 8px 25px;
+    }
+}
+
+.irs--flat .irs-line {
+    top: 13px;
+    height: 5px;
+    background-color: #ececec;
+    border-radius: 0px;
+}
+
+.irs--flat .irs-handle {
+    top: 0px;
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+    box-shadow: 0px 0px 13px 0px rgba(90, 90, 90, 0.2);
+    background-color: #fff;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.irs--flat .irs-bar {
+    top: 13px;
+    height: 5px;
+    background-color: $accent;
+    ;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+    display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    display: none;
+}
+
+.irs--flat {
+    height: 30px;
+
+}
+
+
+
+.filter-color {
+    &__label {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #f0f0f0;
+        cursor: pointer;
+    }
+
+    &__label+&__label {
+        padding-top: 15px;
+    }
+
+    &__label:last-child {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+    }
+
+    &__input:checked+.filter-color__checkbox_blue {
+        background-color: #00aeef;
+    }
+
+    &__input:checked+.filter-color__checkbox_red {
+        background-color: #f52574;
+    }
+
+    &__input:checked+.filter-color__checkbox_green {
+        background-color: #24d4ac;
+    }
+
+    &__input:checked+.filter-color__checkbox_orange {
+        background-color: #ff7e00;
+    }
+
+    &__input:checked+.filter-color__checkbox_black {
+        background-color: #000;
+    }
+
+    &__input:checked+.filter-color__checkbox_purple {
+        background-color: #923899;
+    }
+
+    &__box {
+        position: relative;
+    }
+
+    &__checkbox {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        margin-left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__checkbox_blue-border {
+        background-color: transparent;
+        border: 2px solid #00aeef;
+    }
+
+    &__checkbox_red-border {
+        background-color: transparent;
+        border: 2px solid #f52574;
+    }
+
+    &__checkbox_green-border {
+        background-color: transparent;
+        border: 2px solid #24d4ac;
+    }
+
+    &__checkbox_orange-border {
+        background-color: transparent;
+        border: 2px solid #ff7e00;
+    }
+
+    &__checkbox_black-border {
+        background-color: transparent;
+        border: 2px solid #000;
+    }
+
+    &__checkbox_purple-border {
+        background-color: transparent;
+        border: 2px solid #923899;
+    }
+}
+
+
+.filter-size {
+
+    &__label {
+        padding-left: 35px;
+        display: block;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+    &__label:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+    }
+
+    &__input:checked+.filter-size__checkbox {
+        background-image: url('../../images/shop/checkmark.svg');
+        border: none;
+    }
+
+    &__input:checked+.filter-size__checkbox+.filter-size__text {
+        color: $accent;
+
+    }
+
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $main;
+        position: absolute;
+        margin-left: -35px;
+        border-radius: 50%;
+        margin-top: 2px;
+    }
+}
+
+.filter-category {
+
+    &__label {
+        margin-bottom: 15px;
+        cursor: pointer;
+        display: block;
+    }
+
+    &__label:last-child {
+        margin-bottom: 0;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+    }
+
+    &__input:checked+.filter-category__checkbox {
+        background-color: $accent;
+        color: #fff;
+    }
+
+    &__checkbox {
+        background-color: #f0f0f0;
+        color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+    }
+
+}
+
+
+.filter-popular {
+    &__label {
+        display: inline-block;
+        margin-bottom: 20px;
+        cursor: pointer;
+        margin-right: 8px;
+        padding: 10px 0;
+    }
+
+    &__input {
+        @extend %checkbox-hidden;
+    }
+
+    &__input:checked+.filter-popular__checkbox {
+        background-color: $accent;
+        color: #fff;
+        border-color: $accent;
+    }
+
+    &__checkbox {
+        border: 1px solid $main;
+        padding: 10px 20px;
+    }
+}
+
+
+.shop-content {
+    width: 100%;
+
+    &__filter {
+        border: 1px solid #f0f0f0;
+        padding: 20px 25px 20px 30px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__form {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__btn {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+
+    &__btn_active {
+        path {
+            fill: $accent;
+        }
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        line-height: 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ececec;
+        .product-item {
+            margin-bottom: 40px;
+        }
+        
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; 
+    &__list {
+        display: flex;
+        padding: 0 35px;
+    }
+    &__item {
+        padding: 0 15px;
+    }
+    &__link_active {
+        color: $accent;
+    }
+    &__arrow {
+        text-transform: uppercase;
+        position: relative;
+    }
+    &__arrow::before {
+        content: '';
+        position: absolute;
+        height: 10px;
+        width: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__prev{
+        padding-left: 15px;
+    }
+    &__next {
+        padding-right: 15px;
+    }
+    &__prev::before{
+        background-image: url('../../images/shop/angle-left.svg');
+        left: 0;
+    }
+    &__next::before {
+        background-image: url('../../images/shop/angle-right.svg');
+        right: 0;
+    }
+}
+
+.jq-selectbox__select {
+    height: 32px;
+    padding: 0 30px 0 0px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    @extend %quicksand-500;
+    color: inherit;
+    cursor: pointer;
+    text-shadow: none;
+    outline: none;
+}
+
+.jq-selectbox__select:hover {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 10px;
+    height: 5px;
+    border: none;
+    background-image: url('../../images/shop/angle-down.svg');
+}
+
+.jq-selectbox__dropdown ul {
+    background-color: #fff;
+}
+
+.jq-selectbox__dropdown ul li {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+.jq-selectbox__dropdown ul li:hover {
+    background-color: #7c7c7c;
+    color: #fff;
+}
+
