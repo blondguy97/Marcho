@@ -147,6 +147,9 @@
         text-decoration: line-through;
         @extend %roboto-400;
     }
+    &__star {
+        margin: 0 auto;
+    }
 }
 
 .product-item_list {
@@ -183,7 +186,7 @@
 
     }
 
-    .star {
+    .product-item__star {
         margin-left: 23px;
     }
 
@@ -263,6 +266,3 @@
 }
 
 
-.star {
-    margin: 0 auto;
-}

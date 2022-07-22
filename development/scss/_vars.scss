@@ -70,7 +70,8 @@ $accent: #fe3e57;
 }
 
 
-%checkbox-hidden {
+%checkbox-hidden,
+%radio-hidden {
     position: absolute;
     z-index: -1;
     opacity: 0;
