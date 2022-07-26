@@ -39,10 +39,10 @@
     }
 
     &__item{
+        text-transform: capitalize;
         color: #727272;
         padding-right: 40px;
         position: relative;
-        text-transform:capitalize;
         &::after {
             content: '';
             position: absolute;
