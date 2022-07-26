@@ -21,12 +21,7 @@
         border: 1px solid #ececec;
     }
 
-    &__title {
-        text-transform: uppercase;
-        color: $black;
-        font-size: 22px;
-        margin-bottom: 25px;
-    }
+ 
 }
 
 .filter-search {
@@ -436,3 +431,9 @@
     color: #fff;
 }
 
+.uppercase-title {
+    text-transform: uppercase;
+    color: $black;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
