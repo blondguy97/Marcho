@@ -3,6 +3,16 @@
 $(function () {
 
 
+  $('.menu__btn').on('click', function() {
+    $('.menu__list').toggleClass('menu__list_active')
+
+  })
+
+  $('.footer-top__title').on('click', function() {
+    $(this).next().slideToggle()
+    $(this).toggleClass('footer-top__arrow_active')
+  })
+
   $('.shop-content__btn').on('click', function () {
     $('.shop-content__btn').removeClass('shop-content__btn_active');
     $(this).addClass('shop-content__btn_active')
