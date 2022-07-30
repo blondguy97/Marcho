@@ -63,6 +63,29 @@ $accent: #fe3e57;
     text-align: center;
 }
 
+@media (max-width: 620px) {
+    %title {
+        font-size: 38px;
+        line-height: 55px;
+
+    }
+}
+
+@media (max-width: 420px) {
+    %title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    %title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+}
+
+
 %text {
     text-align: center;
     max-width: 580px;

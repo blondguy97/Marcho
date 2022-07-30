@@ -23,6 +23,7 @@ body {
 }
 
 
+
 @import 'index/index';
 @import 'top/top';
 @import 'modal/modal';
@@ -33,3 +34,6 @@ body {
 @import 'blog-details/blog-details';
 @import 'contacts/contacts';
 
+// ---------Media Queries---------
+
+@import 'index/index-media';
