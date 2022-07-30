@@ -6,9 +6,6 @@
         align-items: center;
     }
 
-    &__content {
-    }
-
     &__title {
         @extend %title;
         text-transform: none;
@@ -27,8 +24,6 @@
         padding: 20px 30px;
     }
 
-    &__img {
-    }
 }
 
 

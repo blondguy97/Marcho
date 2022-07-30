@@ -262,9 +262,16 @@
 
     .video-fashion,
     .product,
-    .promom,
-    .blog {
+    .promo,
+    .blog,
+    .page-404,
+    .blog-page {
         padding: 60px 0;
+    }
+
+    .promo {
+        background-image: none;
+        background-color: #f6f6f6;
     }
 
     #promo-countdown {
@@ -467,6 +474,21 @@
             width: 100%;
         }
     }
+
+    .blog {
+        &__items::before,
+        &__items::after {
+            background-image: none;
+        }
+    }
+    
+    .blog-info {
+        display: block;
+        
+        &__data {
+            margin-top: 5px;
+        }
+    }
 }
 
 @media (max-width: 375px) {
@@ -495,13 +517,6 @@
 
     .blog-item {
         &__content {
-            .blog-info {
-                display: block;
-
-                &__data {
-                    margin-top: 5px;
-                }
-            }
         }
         &__img {
             height: 220px;

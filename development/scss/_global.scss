@@ -26,12 +26,17 @@ body {
 
 @import 'index/index';
 @import 'top/top';
+@import 'top/top-media';
 @import 'modal/modal';
+@import 'modal/modal-media';
 @import '404-page/404-page';
+@import '404-page/404-page-media';
 @import 'shop/shop';
 @import 'production/production';
 @import 'blog-page/blog-page';
+@import 'blog-page/blog-page-media';
 @import 'blog-details/blog-details';
+@import 'blog-details/blog-details-media';
 @import 'contacts/contacts';
 
 // ---------Media Queries---------

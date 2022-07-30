@@ -18,6 +18,11 @@
                     <img class="logo__img" src="images/icons/logo.png" alt="logo">
                 </a>
                 <nav class="menu">
+                    <button class="menu__btn">
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                        <span class="menu__line"></span>
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a class="menu__link menu__link_active" href="#">home</a>
@@ -92,12 +97,10 @@
                             <img class="blog-img" src="images/blog-page/blog-1.jpg" alt="blog img">
                         </a>
                         <div class="blog-news__box">
-                            <h3 class="blog-news__title">
-                                <a class="blog-news__link" href="#">
-                                    Be prepared to sweat a lot, but at least in the Southern regions there’s a good
-                                    chance you ll get to enjoy!
-                                </a>
-                            </h3>
+                            <a class="blog-news__link" href="#">
+                                Be prepared to sweat a lot, but at least in the Southern regions there’s a good
+                                chance you ll get to enjoy!
+                            </a>
 
 
                             <div class="blog-info">
@@ -118,19 +121,27 @@
 
                     </div>
                     <div class="blog-news">
-                        <div class="blog-news__popup" href="#">
+                        <span class="blog-link" href="#">
+                            <img class="blog-img" src="images/blog-page/blog-2.jpg" alt="blog img">
                             <a class="blog-news__play-btn" data-fancybox
-                                href="https://www.youtube.com/watch?v=5PEB7P64wpY">
-                                <img class="blog-news__play-img" src="images/blog-page/play-btn.svg" alt="">
+                                href="https://www.youtube.com/watch?v=3kItbrHHVO8">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="20px" viewBox="0 0 20 20" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style=" stroke:none;fill-rule:nonzero;fill:rgb(99.607843%,24.313725%,34.117647%);fill-opacity:1;"
+                                            d="M 2.285156 19.886719 C 2.425781 19.960938 2.574219 20 2.726562 20 C 2.894531 20 3.0625 19.953125 3.210938 19.863281 L 17.753906 10.769531 C 18.019531 10.605469 18.183594 10.3125 18.183594 10 C 18.183594 9.6875 18.019531 9.394531 17.753906 9.230469 L 3.210938 0.136719 C 2.929688 -0.0351562 2.574219 -0.046875 2.285156 0.113281 C 1.996094 0.273438 1.816406 0.578125 1.816406 0.910156 L 1.816406 19.089844 C 1.816406 19.421875 1.996094 19.726562 2.285156 19.886719 Z M 2.285156 19.886719 " />
+                                    </g>
+                                </svg>
+
                             </a>
-                        </div>
+                        </span>
                         <div class="blog-news__box">
-                            <h3 class="blog-news__title">
                                 <a class="blog-news__link" href="#">
                                     Be prepared to sweat a lot, but at least in the Southern regions theres a good
                                     chance you ll get to enjoy!
                                 </a>
-                            </h3>
 
                             <div class="blog-info">
                                 <div class="blog-info__author">
@@ -156,12 +167,10 @@
                             <img class="blog-img" src="images/blog-page/blog-1.jpg" alt="blog img">
                         </div>
                         <div class="blog-news__box">
-                            <h3 class="blog-news__title">
                                 <a class="blog-news__link" href="#">
                                     Be prepared to sweat a lot, but at least in the Southern regions there’s a good
                                     chance you ll get to enjoy!
                                 </a>
-                            </h3>
 
 
                             <div class="blog-info">
@@ -183,12 +192,10 @@
                     </div>
                     <div class="blog-news blog-news_no-image">
                         <div class="blog-news__box">
-                            <h3 class="blog-news__title">
                                 <a class="blog-news__link" href="#">
                                     Be prepared to sweat a lot, but at least in the Southern regions there’s a good
                                     chance you ll get to enjoy!
                                 </a>
-                            </h3>
 
 
                             <div class="blog-info">
@@ -449,9 +456,8 @@
         </div>
     </section>
 
-
-
     <footer class="footer">
+
         <div class="footer__container _container">
             <div class="footer-top">
                 <div class="footer-top__item footer-top__item_size-260px">
@@ -522,8 +528,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-top__item footer-top__item_size-170px">
-                    <h3 class="footer-top__title">
+                <div class="footer-top__item footer-top__nav footer-top__item_size-170px">
+                    <h3 class="footer-top__title footer-top__arrow">
                         Useful Links
                     </h3>
                     <ul class="footer-top__list">
@@ -544,8 +550,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-top__item footer-top__item_size-170px">
-                    <h3 class="footer-top__title">
+                <div class="footer-top__item footer-top__nav footer-top__item_size-170px">
+                    <h3 class="footer-top__title footer-top__arrow">
                         My Account
                     </h3>
                     <ul class="footer-top__list">
@@ -590,7 +596,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <script src="js/main.min.js"></script>
 </body>

@@ -19,9 +19,22 @@
 }
 
 
-
 .blog-news {
     margin-bottom: 60px;
+
+    &__link {
+        @extend %roboto-500;
+        font-size: 22px;
+        display: inline-block;
+        margin-bottom: 5px;
+        line-height: 32px;
+        color: $black;
+        transition: 0.3s all;
+    }
+
+    &__link:hover {
+        color: $accent;
+    }
 
     &__slider {
 
@@ -73,24 +86,9 @@
         position: relative;
     }
 
-   
 
-    &__play-btn {
-        border-radius: 50%;
-        padding: 20px;
-        background-color: #fff;
-    }
 
-    &__popup {
-        max-width: 770px;
-        height: 450px;
-        object-fit: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        background-image: url('../../images/blog-page/blog-2.jpg');
-    }
+
 
     &__box {
         border: 1px solid #ececec;
@@ -102,28 +100,39 @@
         margin-bottom: 25px;
     }
 
-    &__link {
-        color: $black;
-        font-size: 22px;
-        @extend %roboto-500;
-        margin-bottom: 20px;
-        transition: 0.3s all;
-    }
-
-    &__link {
-        transition: 0.3s all;
-    }
-
-    &__link:hover {
-        color: $accent;
-    }
+  
 
     &__text {
         margin-top: 25px;
     }
 
+    .blog-link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+
+    &__play-btn {
+        position: absolute;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
 }
+
+.blog-news:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
 
 .blog-news_slider {
     .blog-news__box {
@@ -187,6 +196,7 @@
     padding: 40px 30px;
     margin-bottom: 40px;
     border: 1px solid #ececec;
+
     &__item {
         display: flex;
         margin-bottom: 20px;
@@ -194,7 +204,8 @@
         align-items: center;
 
     }
-    &__item + &__item {
+
+    &__item+&__item {
         padding-top: 20px;
         border-top: 1px solid #ececec;
 
@@ -220,7 +231,8 @@
         padding-left: 25px;
         position: relative;
     }
-    &__date::before  {
+
+    &__date::before {
         content: '';
         position: absolute;
         width: 16px;
@@ -232,4 +244,3 @@
         transform: translateY(-50%);
     }
 }
-
