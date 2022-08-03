@@ -83,7 +83,8 @@ $('.production-slider__bigs').slick({
       breakpoint: 1050,
       settings: {
         draggable: true,
-        // dots: true
+        dots: true,
+        fade: false
       }
     },
   ]
