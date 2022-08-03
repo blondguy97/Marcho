@@ -433,10 +433,13 @@
 
     &__img-box {
         position: relative;
-        height: 370px;
         overflow: hidden;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
 
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
     }
 
     &__content-box {
@@ -445,10 +448,6 @@
 
     &__img-box:hover .product-item__links {
         transform: translateY(0%);
-    }
-
-    &__img {
-        object-fit: cover;
     }
 
     &__links {

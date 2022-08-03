@@ -10,11 +10,10 @@
     }
 
     &__title {
-        font-size: 48px;
-        line-height: 58px;
-        @extend %roboto-700;
-        color: $black;
+        @extend %title;
         margin-bottom: 20px;
+        text-align: left;
+        text-transform: unset;
     }
 
     &__text {
@@ -90,7 +89,7 @@
         display: block;
         width: 100%;
         border: none;
-        background-color: #dcdcdc;
+        background-color: #f6f6f6;
         margin-bottom: 30px;
     }
     &__input {

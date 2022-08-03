@@ -3,10 +3,23 @@
         &__share {
             margin-right: 0px;
         }
+
+        &__content {
+            .comments-form {
+                &__field {
+                    width: 45%;
+                }
+            }
+        }
     }
-    .comments-form {
-        &__field {
-            width: 45%;
+
+}
+
+@media (max-width: 860px) {
+    .related {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
     }
 }
@@ -21,27 +34,35 @@
             margin-right: 0;
             margin-bottom: 10px;
         }
+
         &__float-img {
             float: none;
             margin-right: 0;
             width: 100%;
             display: block;
         }
+
+        &__content {
+            .comments-form {
+                &__fields {
+                    display: block;
+                    margin: 0;
+                }
+
+                &__field {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                &__textarea {
+                    height: 125px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
     }
-    .comments-form {
-        &__fields {
-            display: block;
-            margin: 0;
-        }
-        &__field {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        &__textarea {
-            height: 125px;
-            margin-bottom: 30px;
-        }
-    }
+
+
 }
 
 @media (max-width: 500px) {
@@ -50,18 +71,29 @@
             display: none;
         }
     }
+
     .comment {
-        &__img {
+
+        &__img,
+        &__date {
             display: none;
         }
     }
+
+    .related {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
+
 @media (max-width: 420px) {
     .blog-details {
         &__box {
             text-align: center;
             display: block;
         }
+
         &__tags {
             margin-bottom: 8px;
         }

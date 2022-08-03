@@ -112,11 +112,15 @@
         }
     }
 
-    .product-item {
-        &__img-box {
-            height: 315px;
+    .product {
+        .product-item {
+            &__img-box {
+                height: 315px;
+            }
         }
     }
+
+
 
     .video-fashion {
         &__inner {
@@ -265,7 +269,10 @@
     .promo,
     .blog,
     .page-404,
-    .blog-page {
+    .blog-page,
+    .contacts,
+    .shop,
+    .production {
         padding: 60px 0;
     }
 
@@ -413,6 +420,12 @@
         }
     }
 
+    .footer-top {
+        &__link {
+            display: block;
+        }
+    }
+
     .promo {
         &__main-title {
             margin-bottom: 30px;
@@ -476,15 +489,16 @@
     }
 
     .blog {
+
         &__items::before,
         &__items::after {
             background-image: none;
         }
     }
-    
+
     .blog-info {
         display: block;
-        
+
         &__data {
             margin-top: 5px;
         }
@@ -516,11 +530,10 @@
     }
 
     .blog-item {
-        &__content {
-        }
         &__img {
             height: 220px;
         }
+
         &__title {
             margin: 8px 0;
         }

@@ -23,22 +23,39 @@ body {
 }
 
 
+// ---------Pages---------
 
 @import 'index/index';
 @import 'top/top';
-@import 'top/top-media';
 @import 'modal/modal';
-@import 'modal/modal-media';
 @import '404-page/404-page';
-@import '404-page/404-page-media';
 @import 'shop/shop';
 @import 'production/production';
 @import 'blog-page/blog-page';
-@import 'blog-page/blog-page-media';
 @import 'blog-details/blog-details';
-@import 'blog-details/blog-details-media';
 @import 'contacts/contacts';
 
-// ---------Media Queries---------
+// ------------------
+
+
+// ---------Adapted Pages---------
 
 @import 'index/index-media';
+@import 'top/top-media';
+@import 'modal/modal-media';
+@import '404-page/404-page-media';
+@import 'shop/shop-media';
+@import 'blog-page/blog-page-media';
+@import 'production/production-media';
+@import 'blog-page/blog-page-media';
+@import 'blog-details/blog-details-media';
+@import 'contacts/contacts-media';
+
+// -------------------------
+
+
+
+
+
+
+

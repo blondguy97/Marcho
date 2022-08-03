@@ -1,0 +1,30 @@
+@media (max-width: 1100px) {
+    .contacts {
+        &__inner {
+            display: block;
+        }
+        &__info {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        &__form {
+            box-shadow: none;
+            padding: 0;
+        }
+        &__box {
+            display: block;
+        }
+        &__input {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts {
+        &__btn {
+            width: 100%;
+            padding: 15px 30px;
+        }
+    }
+}

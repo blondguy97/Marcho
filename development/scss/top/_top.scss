@@ -25,6 +25,8 @@
         display: flex;
         position: relative;
         padding-left: 25px;
+        flex-wrap: wrap;
+
 
         &::before {
             content: '';

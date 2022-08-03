@@ -1,0 +1,123 @@
+@media (max-width: 1240px) {
+    .shop {
+        &__inner {
+            display: block;
+        }
+
+        &__filters {
+            max-width: 100%;
+            margin-right: 0;
+            display: none; // временно
+            position: absolute;
+            top: 20px;
+            left: 0;
+            z-index: 100;
+            background-color: #fff;
+
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .shop-content {
+        &__inner {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__no-grid {
+            display: flex;
+        }
+    }
+    .shop {
+        &__filter-btn {
+            display: block;
+            border: none;
+            padding: 0;
+            width: 40px;
+            position: fixed;
+            right: 20px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.5s all;
+            z-index: 105;
+            bottom: 20px;
+            background-image: url('../../images/shop/filter.svg');
+            height: 40px;
+        }
+    }
+    
+}
+
+@media (max-width: 860px) {
+    .shop-content {
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .shop-content {
+        &__btns {
+            display: none;  
+        }
+        &__filter {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .shop-content {
+        &__inner {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .product-item {
+            &__img-box {
+                height: 370px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .shop-content {
+        &__filter {
+            justify-content: center;
+        }
+    }
+    .pagination {
+        &__arrow {
+            display: none;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 375px) {
+    .filter-popular {
+        &__label {
+            display: block;
+            margin-right: 0;
+            padding: 0;
+        }
+        &__label:last-child {
+            margin-bottom: 0;
+        }
+        &__checkbox {
+            display: block;
+            margin-right: 0;
+        }
+    }
+    .filter {
+        &__item {
+            margin: 0;
+        }
+    }
+
+}

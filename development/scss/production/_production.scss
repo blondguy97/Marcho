@@ -1,8 +1,7 @@
 .production {
-    &__inner {
-        padding: 120px 0 60px;
-        border-bottom: 1px solid #f0f0f0;
-    }
+    padding: 120px 0 60px;
+    border-bottom: 1px solid #f0f0f0;
+
 }
 
 .production-item {
@@ -44,6 +43,7 @@
     &__big-img {
         width: 560px;
         height: 650px;
+        object-position: top;
         object-fit: cover;
     }
 }
@@ -359,7 +359,7 @@
     }
 
     &__field {
-        width: 570px;
+        width: 48%;
         display: inline-block;
         height: 50px;
         padding: 0 20px;

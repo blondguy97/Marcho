@@ -123,6 +123,13 @@
         align-items: center;
         justify-content: center;
         background-color: #fff;
+        .btn {
+            width: 16px ;
+            height: 20px;
+            path {
+                fill: $accent;
+            }
+        }
     }
 }
 
@@ -172,8 +179,6 @@
 }
 
 .personal {
-
-    &__socials {}
 
     &__social-link {
         margin: 0 8px;
