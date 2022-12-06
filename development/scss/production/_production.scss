@@ -306,6 +306,7 @@
 }
 
 .comment-bottom {
+    text-align: right;
     &__link {
         display: inline-block;
         padding-left: 25px;
@@ -321,6 +322,9 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &__text {
+        text-align: left;
     }
 }
 

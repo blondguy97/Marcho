@@ -73,8 +73,12 @@
     }
 
     .comment {
+        &__img {
+            display: none;
+        }
+    }
 
-        &__img,
+    .comment-top {
         &__date {
             display: none;
         }
@@ -85,6 +89,7 @@
             grid-template-columns: repeat(1, 1fr);
         }
     }
+
 }
 
 @media (max-width: 420px) {

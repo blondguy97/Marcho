@@ -49,14 +49,13 @@
         margin-left: 15px;
     }
 
-    .slick-dots li.slick-active {}
-
     .slick-dots li button {
         font-size: 0;
         padding: 0;
-        border: black solid 1px;
+        border: $accent solid 2px;
         background-color: transparent;
         border-radius: 50%;
+        transition: 0.3s all;
         width: 15px;
         height: 15px;
 
